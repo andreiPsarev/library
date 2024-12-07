@@ -1,0 +1,7 @@
+#add-book-form {
+    display: none; /* Скрываем форму по умолчанию */
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
