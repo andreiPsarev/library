@@ -25,12 +25,17 @@ function displayBooks() {
         const bookCard = document.createElement("div");
         bookCard.classList.add("book-card");
         bookCard.innerHTML = `
-         <h3>${book.title}</h3>
-            <p>Author: ${book.author}</p>
-            <p>Pages: ${book.pages}</p>
-            <p>Status: ${book.read ? 'Read' : 'Not read yet'}</p>
-            <button onclick="toggleReadStatus(${index})">Toggle Read Status</button>
+        <div class = "book-info">
+            <h3 class ="book-title">${book.title}</h3>
+            <p class ="book-author">Author: ${book.author}</p>
+            <p class ="book-pages">Pages: ${book.pages}</p>
+            <p class ="book-status">Status: ${book.read ? 'Read' : 'Not read yet'}</p>
+        </div>
+        <div class = "book-buttons">
+            <button onclick="toggleReadStatus(${index})">Status</button>
             <button onclick="removeBook(${index})">Remove</button>
+        </div>
+            
         `;
         libraryContainer.appendChild(bookCard);
     });
