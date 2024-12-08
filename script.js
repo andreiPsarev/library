@@ -55,7 +55,7 @@ function removeBook(index) {
 
 document.getElementById("new-book-button").addEventListener("click", () => {
     const form = document.getElementById("add-book-form");
-    form.style.display = form.style.display === "none" || form.style.display === "" ? "block" : "none";
+    form.style.display = form.style.display === "none" || form.style.display === "" ? "flex" : "none";
 });
 
 document.getElementById("add-book-form").addEventListener("submit", (e) => {
